@@ -8,3 +8,4 @@ then
 else
     echo "Please run with root access "
 fi
+dnf list installed mysql

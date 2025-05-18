@@ -2,7 +2,7 @@
 USER=$(id -u)
 
 #  checking root user login or not 
-if [ $USER -eq 197609 ]
+if [ $USER -eq 0 ]
 then
     echo "you are already running with root access "
 
@@ -10,11 +10,13 @@ then
     dnf list installed mysql
     if [ $? -ne 0 ]
     then
+        echo "$?"
         echo "MySql is not installed,  Installing Mysql"
         dnf install mysql -y
 
         if [ $? -eq 0 ]
         then
+            echo "$?"
             echo " MySql is installed Successfully"
         else
             echo " MySql installation Failure"

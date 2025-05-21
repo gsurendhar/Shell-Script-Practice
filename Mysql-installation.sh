@@ -8,7 +8,7 @@ SCRIPT_PATH=$PWD
 
 
 # root Privileges checking
-if [ USERID -eq 0 ]
+if [ $USERID -eq 0 ]
 then
     echo "you are running with root access"
 else

@@ -2,7 +2,7 @@
 USER=$(id -u)
 
 #  checking root user login or not 
-if [ $USER -eq 197609 ]
+if [ $USER -eq 0 ]
 then
     echo "you are already running with root access "
 

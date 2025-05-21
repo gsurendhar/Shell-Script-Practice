@@ -2,7 +2,7 @@
 USER=$(id -u)
 
 #  checking root user login or not 
-if [ $USER -eq 0]
+if [ $USER -eq 0 ]
 then
     echo "you are already running with root access "
 else
@@ -33,7 +33,7 @@ then
 
 else
     echo " MySql is already installed, nothing to do "
-    exit1
+    #exit1
 fi
 
 
@@ -50,7 +50,7 @@ then
 
 else
     echo " python is already installed, nothing to do "
-    exit1
+    #exit1
 fi
 
 
@@ -68,7 +68,7 @@ then
 
 else
     echo " nginx is already installed, nothing to do "
-    exit1
+    #exit1
 fi
 
 

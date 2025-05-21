@@ -14,7 +14,7 @@ VALIDATE(){
 }
 
 #  checking root user login or not 
-if [ $USER -eq 0]
+if [ $USER -eq 0 ]
 then
     echo "you are already running with root access "
 

@@ -38,3 +38,39 @@ fi
 
 
 
+dnf list installed python
+if [ $? -ne 0 ]
+then
+    echo "python is not installed,  Installing Mysql"
+        
+    dnf install python -y
+
+    VALIDATE $? "python"
+
+
+else
+    echo " python is already installed, nothing to do "
+    exit1
+fi
+
+
+
+
+dnf list installed nginx
+if [ $? -ne 0 ]
+then
+    echo "nginx is not installed,  Installing Mysql"
+        
+    dnf install nginx -y
+
+    VALIDATE $? "nginx"
+
+
+else
+    echo " nginx is already installed, nothing to do "
+    exit1
+fi
+
+
+
+

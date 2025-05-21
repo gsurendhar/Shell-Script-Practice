@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 SCRIPT_PATH=$PWD
-PACKAGES=("mysql" "python" "nginx" "httpd" "git")
+PACKAGES=("mysql" "python3" "nginx" "httpd" "git")
 
 LOG_FOLDER="/var/log/shell-practice"
 SCRIPT_FILE=$( echo $0 | cut -d "." -f1)

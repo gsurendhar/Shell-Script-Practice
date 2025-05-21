@@ -31,7 +31,7 @@ then
 
     else
         echo " MySql is already installed, nothing to do "
-        exit1
+        #exit1
     fi
 
 else

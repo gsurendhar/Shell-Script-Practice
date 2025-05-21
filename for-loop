@@ -36,7 +36,7 @@ VALIDATE() {
 }
 
 # for loop is using to install multiple packages
-for packages in {$PACKAGES[@]}
+for packages in ${PACKAGES[@]}
 do
 # $packages of installation, if not installed need to install
     dnf list installed $packages   &>>$LOG_FILE

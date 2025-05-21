@@ -8,7 +8,7 @@ SCRIPT_PATH=$PWD
 
 
 # root Privileges checking
-if [ $USERID -eq 197609 ]
+if [ $USERID -eq 0 ]
 then
     echo -e "$Y you are running with root access $N"
 else

@@ -58,7 +58,8 @@ then
     echo "Files to Zip are : $FILES_TO_DELETE "
     TIME_STAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE="$DEST_DIR/app_logs_$TIME_STAMP.zip"
-    echo $FILES_TO_DELETE | zip @ $ZIP_FILE
+    # echo $FILES_TO_DELETE | zip @ $ZIP_FILE
+    echo $FILES_TO_DELETE | tr '' '\n' | zip @ $ZIP_FILE
     if [ -f $ZIP_FILE ]
     then
         echo -e "Successfully Created Zip file"

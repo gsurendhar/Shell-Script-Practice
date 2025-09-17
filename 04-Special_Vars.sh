@@ -14,3 +14,4 @@ sleep 10 &
 echo "PID of last command in background : $!"
 echo "$1 , $2, $3 , $NUM , $NUM1"
 echo "$* === $@"
+echo "previous command exit status : $?"  #---> if status code is 0(zero) -> success, otherthan 0(zero) it is failed
